@@ -16,7 +16,7 @@ for chinese_text in chinese_texts:
 
 for chinese_text, translated_text in dict.items(translated_texts):
     print(chinese_text, translated_text)
-    context = context.replace(chinese_text, translated_text, 1)
+    context = context.replace(chinese_text, translated_text)
 
 with open(output_file, "w", encoding="utf8") as in_file:
     context = in_file.write(context)
