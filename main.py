@@ -19,4 +19,4 @@ for chinese_text, translated_text in dict.items(translated_texts):
     context = context.replace(chinese_text, translated_text)
 
 with open(output_file, "w", encoding="utf8") as out_file:
-    context = in_file.write(context)
+    out_file.write(context)
